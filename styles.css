@@ -1,0 +1,302 @@
+.title {
+    color: #226e22;
+    align-content: center;
+    justify-content: center;
+}
+
+*{
+    padding: 0; 
+    padding-left: 2%;
+    padding-right: 2%;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body { background-color: #0e0e0e; } /* fallback gradient not working */
+
+body {
+    min-height: 100vh;
+    background-image: linear-gradient( /* https://www.w3schools.com/css/css3_gradients.asp */
+    45deg,
+    hsl(240deg 100% 20%) 38%,
+    hsl(289deg 100% 21%) 64%,
+    hsl(335deg 100% 21%) 26%,
+    hsl(329deg 100% 36%) 33%,
+    hsl(337deg 100% 43%) 44%, 
+    hsl(350deg 91% 59%) 56%, 
+    hsl(20deg 100% 59%) 67%,
+    hsl(30deg 103% 53%) 78%,
+    hsl(39deg 100% 50%) 89%,
+    hsl(34deg 100% 44%) 100%
+    );
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px clamp(16px, 3vw, 48px);
+    background: hsla(0, 0%, 0%, 0.44); 
+}
+
+nav a{ 
+    white-space:nowrap; 
+    text-decoration:none; 
+    color:white;
+}
+
+nav ul {
+display: flex;
+justify-content: center;
+gap: 2.5rem;
+list-style: none;
+}
+
+nav ul a{
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+nav > a{ /* children of a */
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+}
+
+section{
+    color: white;
+    padding: 4vw;
+}
+
+.Main img {
+  display: block;
+  margin-inline: auto;
+
+  max-width: 50%;
+  height: auto;
+}
+
+
+img, video, canvas, svg {
+  max-width: 90%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 6vw;
+}
+
+/* Hero */
+.hero {
+  padding-top: 0;
+  padding-bottom: 6vh;
+  color: #fff;
+}
+.hero h1 {
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  line-height: 1.2;
+  margin-bottom: 0.6rem;
+}
+.hero p {
+  max-width: 70ch;
+  opacity: 0.9;
+}
+
+/* Section headers */
+section h2 {
+  font-size: clamp(1.3rem, 2.2vw, 1.8rem);
+  margin: 2.2rem 0 0.5rem;
+  color: #fff;
+}
+.sub {
+  opacity: 0.85;
+  margin-bottom: 2.4rem;
+}
+
+/* https://www.w3schools.com/cssref/pr_grid-template-columns.php */
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4  colums  */
+  gap: clamp(14px, 2vw, 20px); /* https://www.w3schools.com/cssref/func_clamp.php  min pref max*/
+}
+
+.logo-card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 27px;
+  padding: clamp(14px, 2.5vw, 20px);
+  text-align: center;
+  transition: transform .15s ease, background .2s ease;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+}
+.logo-card:hover {
+  transform: translateY(-15px);
+  background: rgba(115, 115, 115, 0.03);
+}
+.logo-card img {
+  display: block;
+  width: 100%;
+  max-width: 120px;
+  margin: 0 auto 10px;
+  height: auto;
+}
+.logo-card figcaption {
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: .2px;
+}
+
+/* Resume list */
+.resume-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 18px;
+}
+.resume-list li {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: clamp(14px, 2.5vw, 20px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+}
+.resume-list h3 {
+  color: #fff;
+  margin-bottom: 6px;
+  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+}
+.resume-list p {
+  margin: 0;
+  opacity: 0.9;
+}
+
+/* Footer */
+.footer {
+  padding: 6vh 0 8vh;
+  text-align: center;
+  opacity: 0.85;
+}
+
+.listlink{
+    color: hotpink
+}
+
+.project {
+  color: white;
+  padding: 8% 10%;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project h2 {
+  color: #ffb400;
+  margin-bottom: 0.5rem;
+}
+
+.project p {
+  color: #ddd;
+  line-height: 1.6;
+}
+
+/* images on photos page */
+.photo-gallery {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: clamp(12px, 3vw, 28px);
+}
+
+.photo-row {
+  display: flex;
+  gap: clamp(10px, 2vw, 20px);
+  margin-block: clamp(12px, 3vw, 24px);
+}
+.photo-row img {
+  height: 260px;
+  width: auto;
+  object-fit: cover;
+  display: block;
+  border-radius: 2px;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.section-main {
+  color: #fff;
+  padding-top: 96px;
+  padding-bottom: 48px;
+}
+
+.page-title {
+  font-size: 28px;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+.page-lead {
+  font-size: 16px;
+  opacity: 0.9;
+  margin-bottom: 20px;
+  max-width: 70ch; 
+}
+
+.course-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 12px;
+}
+
+.course {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+  padding: 19px 96px;
+  box-shadow: 0 6px 18px rgba(118, 118, 118, 0.18);
+}
+
+.course .code {
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  font-size: 17px;
+  margin-bottom: 2px;
+}
+
+.course .title {
+  font-size: 16px;
+  line-height: 1.35;
+  opacity: 1.11;
+  margin-bottom: 2px;
+color:#ffff6a;
+}
+
+@media (min-width: 900px) {
+  .course-list { grid-template-columns: 1fr 1fr; }
+}
+
+
+
+
+
+
+
+
+
+

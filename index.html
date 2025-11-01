@@ -1,14 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-    <meta charset="UTF-8" />
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link rel="stylesheet" href="" />
-    <style></style>
-    <script src=""></script>
-    <!--- Code above this line will not be displayed on the browser -->
+    <head>
+        <meta charset="UTF-8" />
+        <title>Index Page</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js"></script>
+    </head>
+    
     <body>
-        <p>Hello World</p>
-        <p>My name is Tyler Sussis</p>
+       <nav>
+           <a href="index.html">TJS</a>
+           <ul>
+               <li><a href="About%20Me.html">About Me</a></li>
+               <li><a href="Projects.html">Projects</a></li>
+               <li><a href="Classes.html">Classes</a></li>
+               <li><a href="Photos.html">Photos</a></li>
+           </ul>
+        </nav>
+        
+        <section>
+              <header class="hero container">
+    <h1>Who is this Guy?</h1>
+    <p>
+      I’m Tyler, I tell stories with video editing, photography, and motion graphics. 
+      Here you’ll find a snapshot of what I’m building.
+    </p>
+  </header>
+
+  <!-- Softwaregrid -->
+  <section class="container">
+    <h2>Software I Use</h2>
+    <p class="sub">
+      These are my daily tools for designing.
+    </p>
+
+    <div class="logo-grid">
+      <figure class="logo-card">
+        <img src="/images/photoshop-logo.png" alt="Adobe Photoshop logo" />
+        <figcaption>Photoshop</figcaption>
+      </figure>
+
+      <figure class="logo-card">
+        <img src="/images/illistrator-logo.webp" alt="Adobe Illustrator logo"/>
+        <figcaption>Illustrator</figcaption>
+      </figure>
+
+      <figure class="logo-card">
+        <img src="/images/after-effects-logo.png" alt="Adobe After Effects logo" />
+        <figcaption>After Effects</figcaption>
+      </figure>
+
+      <figure class="logo-card">
+        <img src="/images/Tableau-Symbol.png" alt="Tableau logo" />
+        <figcaption>Tableau</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2>How I spend My Time</h2>
+    <ul class="resume-list">
+      <li>
+        <h3>Co-Founder / Co-President: Music Production Club</h3>
+        <p>
+          I co-founded and lead an RSO with 100+ members focused on music creation, mixing,
+          and collaboration. We host weekly production meetups, peer-review sessions,
+          workshops on DAW fundamentals & sound design, and collab challenges that culminate
+          in showcases of our members work. Our goals are to: build a supportive community, level up everyone’s skills,
+          and ship finished tracks together.
+        </p>
+      </li>
+
+      <li>
+        <h3>Video & Photo Projects</h3>
+        <p>
+          Cinematic edits, event recaps, and short-form visuals that emphasize pacing,
+          composition, and color. Tools: DaVinci Resolve + After Effects.
+        </p>
+      </li>
+
+      <li>
+        <h3>Physical & Digital Graphics</h3>
+        <p>
+          Posters, prints, product mockups / packaging etc. 
+        </p>
+      </li>
+
+      <li>
+        <h3>Data Visualization</h3>
+        <p>
+          Clear visuals in Tableau that showcase data in an intuitive way.
+        </p>
+      </li>
+    </ul>
+  </section>
+            
+        </section>
     </body>
+    
 </html>
